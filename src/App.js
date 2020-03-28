@@ -15,7 +15,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <section className='main'>
-          <Headline header='Posts' desc='Click on this button to render Post' />
+          <Headline header='Posts' desc='Click on this button to render Post' tempArray={tempArray} />
         </section>
       </div>
     )

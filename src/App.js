@@ -18,18 +18,17 @@ const tempArray = [
 ];
 class App extends Component {
 
-  constructor(props){
-      super(props)
-      this.fetch=this.fetch.bind(this)
-  }  
-  fetch() {
+  // constructor(props){
+  //     super(props)
+  //     this.fetch=this.fetch.bind(this)
+  // }  
+  fetch=()=> {
      
     this.props.fetchPosts();
    
   }
   render() {
     const { posts } = this.props;
-    console.log(this.props.posts) 
     const configButton = {
       buttonText: "Get Posts",
       emitEvent: this.fetch
